@@ -13,70 +13,70 @@ public:
 	void operator=(const Date& date);
 
 	/*
-	* @brief Îïğåäåëÿåò ñêîëüêî äíåé â ìåñÿöå
-	* @param month: ìåñÿö
-	* @returns 0 - 30 äíåé, -1 - Ôåâğàëü, 1 - 31 äåíü
+	* @brief ĞĞ¿Ñ€ĞµĞ´ĞµĞ»ÑĞµÑ‚ ÑĞºĞ¾Ğ»ÑŒĞºĞ¾ Ğ´Ğ½ĞµĞ¹ Ğ² Ğ¼ĞµÑÑÑ†Ğµ
+	* @param month: Ğ¼ĞµÑÑÑ†
+	* @returns 0 - 30 Ğ´Ğ½ĞµĞ¹, -1 - Ğ¤ĞµĞ²Ñ€Ğ°Ğ»ÑŒ, 1 - 31 Ğ´ĞµĞ½ÑŒ
 	*/
 	int MonthType(int month);
 
 	/*
-	* @brief Âîçâğàùàåò äåíü
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ´ĞµĞ½ÑŒ
 	* @returns m_day
 	*/
 	int GetDay();
 
 	/*
-	* @brief Âîçâğàùàåò ìåñÿö
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ¼ĞµÑÑÑ†
 	* @returns m_month
 	*/
 	int GetMonth();
 
 	/*
-	* @brief Âîçâğàùàåò ãîä
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ³Ğ¾Ğ´
 	* @returns m_year
 	*/
 	int GetYear();
 
 	/*
-	* @brief Ïğîâåğÿåò íå âûõîäèò-ëè íîìåğ äíÿ çà ïğåäåëû ìåñÿöà
-	* @param day: íîìåğ äíÿ
-	* @param month: ìåñÿö
-	* @param year: ãîä
-	* @returns true - âûõîäèò, false - íå âûõîäèò
+	* @brief ĞŸÑ€Ğ¾Ğ²ĞµÑ€ÑĞµÑ‚ Ğ½Ğµ Ğ²Ñ‹Ñ…Ğ¾Ğ´Ğ¸Ñ‚-Ğ»Ğ¸ Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ´Ğ½Ñ Ğ·Ğ° Ğ¿Ñ€ĞµĞ´ĞµĞ»Ñ‹ Ğ¼ĞµÑÑÑ†Ğ°
+	* @param day: Ğ½Ğ¾Ğ¼ĞµÑ€ Ğ´Ğ½Ñ
+	* @param month: Ğ¼ĞµÑÑÑ†
+	* @param year: Ğ³Ğ¾Ğ´
+	* @returns true - Ğ²Ñ‹Ñ…Ğ¾Ğ´Ğ¸Ñ‚, false - Ğ½Ğµ Ğ²Ñ‹Ñ…Ğ¾Ğ´Ğ¸Ñ‚
 	*/
 	bool CheckOverflow(int day, int month, int year);
 
 	/*
-	* @brief Âîçâğàùàåò äàòó èçìåíåíóş íà íåêîòîğîå êîë-âî äíåé
-	* @param days: êîëè÷åñòâî äíåé
-	* @return res - íîâàÿ äàòà
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ´Ğ°Ñ‚Ñƒ Ğ¸Ğ·Ğ¼ĞµĞ½ĞµĞ½ÑƒÑ Ğ½Ğ° Ğ½ĞµĞºĞ¾Ñ‚Ğ¾Ñ€Ğ¾Ğµ ĞºĞ¾Ğ»-Ğ²Ğ¾ Ğ´Ğ½ĞµĞ¹
+	* @param days: ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ´Ğ½ĞµĞ¹
+	* @return res - Ğ½Ğ¾Ğ²Ğ°Ñ Ğ´Ğ°Ñ‚Ğ°
 	*/
 	Date operator+(int days);
 	
 	/*
-	* @brief Âîçâğàùàåò äàòó èçìåíåíóş íà íåêîòîğîå êîë-âî äíåé
-	* @param days: êîëè÷åñòâî äíåé
-	* @return res - íîâàÿ äàòà
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ğ´Ğ°Ñ‚Ñƒ Ğ¸Ğ·Ğ¼ĞµĞ½ĞµĞ½ÑƒÑ Ğ½Ğ° Ğ½ĞµĞºĞ¾Ñ‚Ğ¾Ñ€Ğ¾Ğµ ĞºĞ¾Ğ»-Ğ²Ğ¾ Ğ´Ğ½ĞµĞ¹
+	* @param days: ĞºĞ¾Ğ»Ğ¸Ñ‡ĞµÑÑ‚Ğ²Ğ¾ Ğ´Ğ½ĞµĞ¹
+	* @return res - Ğ½Ğ¾Ğ²Ğ°Ñ Ğ´Ğ°Ñ‚Ğ°
 	*/
 	Date operator-(int days);
 
 	/*
-	* @brief Âîçâğàùàåò ğàçíèöó ìåæäó äâóìÿ äàòàìè â äíÿõ
-	* @param date: äàòà
-	* @returns days - ğàçíèöà
+	* @brief Ğ’Ğ¾Ğ·Ğ²Ñ€Ğ°Ñ‰Ğ°ĞµÑ‚ Ñ€Ğ°Ğ·Ğ½Ğ¸Ñ†Ñƒ Ğ¼ĞµĞ¶Ğ´Ñƒ Ğ´Ğ²ÑƒĞ¼Ñ Ğ´Ğ°Ñ‚Ğ°Ğ¼Ğ¸ Ğ² Ğ´Ğ½ÑÑ…
+	* @param date: Ğ´Ğ°Ñ‚Ğ°
+	* @returns days - Ñ€Ğ°Ğ·Ğ½Ğ¸Ñ†Ğ°
 	*/
 	int operator-(const Date& date);
 
 	/*
-	* @brief Ñğàâíèâàşò äâå äàòû
-	* @param date: äàòà
+	* @brief Ğ¡Ñ€Ğ°Ğ²Ğ½Ğ¸Ğ²Ğ°ÑÑ‚ Ğ´Ğ²Ğµ Ğ´Ğ°Ñ‚Ñ‹
+	* @param date: Ğ´Ğ°Ñ‚Ğ°
 	* @returns true/false
 	*/
 	bool operator!=(const Date& date) const;
 	
 	/*
-	* @brief Ñğàâíèâàşò äâå äàòû
-	* @param date: äàòà
+	* @brief Ğ¡Ñ€Ğ°Ğ²Ğ½Ğ¸Ğ²Ğ°ÑÑ‚ Ğ´Ğ²Ğµ Ğ´Ğ°Ñ‚Ñ‹
+	* @param date: Ğ´Ğ°Ñ‚Ğ°
 	* @returns true/false
 	*/
 	bool operator>(const Date& date);
